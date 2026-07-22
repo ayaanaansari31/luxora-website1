@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="top-banner">
+        <div>Find a Store</div>
+        <div class="offer">
+            10% OFF ANY ITEMS IF YOU SIGN UP
+        </div>
+    </div>
+
+    <header>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">New In</a>
+            <a href="products.html?type=mens">Mens</a>
+            <a href="products.html?type=womens">Womens</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="logo">
+            LUXORA
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="icons">
+            <i class="fa-regular fa-user"></i>
+            <div class="bag">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="products.html">New In</a>
+        <a href="products.html?type=mens">Mens</a>
+        <a href="products.html?type=womens">Womens</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="login-modal">
+        <div class="login-box">
+            <span class="close">&times;</span>
+            <h2>LOGIN</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart-modal">
+        <div class="cart-box">
+            <span class="close cart-close">&times;</span>
+            <h2>YOUR BAG</h2>
+            <div id="cart-items"></div>
+            <div class="cart-footer">
+                <p class="cart-total">Total: £0.00</p>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="category">
+            <div class="category-header">
+                <h2 id="product-heading">New In</h2>
+                <div class="sort-box">
+                    <label for="sort-price">Sort by price</label>
+                    <select id="sort-price">
+                        <option value="low">Low to High</option>
+                        <option value="high">High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div id="product-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>HOW CAN WE HELP?</h3>
+                <a href="contact.html">contact us</a>
+                <a href="#">shipping</a>
+                <a href="#">returns and exchange</a>
+                <a href="#">warranty</a>
+                <a href="#">track an order</a>
+                <a href="#">payment methods</a>
+            </div>
+            <div class="footer-column">
+                <h3>OUR CATERGORIES</h3>
+                <a href="products.html">new in</a>
+                <a href="products.html?type=mens">mens</a>
+                <a href="products.html?type=womens">womens</a>
+                <a href="#">summer outfits</a>
+                <a href="#">winter outfits</a>
+            </div>
+            <div class="footer-column">
+                <h3>SOCIAL MEDIA</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <p class="follow">follow for updates</p>
+            </div>
+            <div class="footer-pages">
+                <a href="index.html">homepage</a>
+                <span>|</span>
+                <a href="products.html">products</a>
+                <span>|</span>
+                <a href="contact.html">about us/contact</a>
+            </div>
+            <div class="footer-email">
+                <span>email adress</span>
+                <form class="email-signup">
+                    <input type="email">
+                    <button type="submit">&gt;</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <h2 class="footer-logo">LUXORA</h2>
+            <div class="footer-legal">
+                <p>Copyright &copy; Luxora.</p>
+                <p>
+                    <a href="#">Accessibility Statement</a> |
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms &amp; Conditions</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
